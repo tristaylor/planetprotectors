@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+#profile {
+    margin: 1rem 0;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#profile-form label {
+    margin-bottom: 0.5rem;
+}
+
+#profile-form input, #profile-form select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.avatar-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: none;
+}
+
+.avatar-part {
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+@keyframes clap {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#introduction, #tips, #challenges, #badges {
+    margin: 1rem 0;
+}
+
+#introduction p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.challenge {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    .challenge {
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.3rem 0.5rem;
+    }
+}
+/* Existing styles here */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

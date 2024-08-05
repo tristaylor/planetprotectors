@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Protectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Planet Protectors</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Welcome to Planet Protectors</h2>
+            <p>Planet Protectors is an app designed to encourage eco-friendly behavior through fun and engaging nature challenges. Complete challenges, upload photos, and earn badges while making a positive impact on our planet.</p>
+        </section>
+        <section id="tips">
+            <h2>Tips to Help the Planet</h2>
+            <ul>
+                <li>Reduce, reuse, and recycle</li>
+                <li>Conserve water and energy</li>
+                <li>Plant trees and support reforestation</li>
+                <li>Use sustainable transportation options</li>
+                <li>Avoid single-use plastics</li>
+                <li>Support local and organic produce</li>
+            </ul>
+        </section>
+        <section id="challenges">
+            <h2>Nature Challenges</h2>
+            <div class="challenge">
+                <h3>Plant a Tree</h3>
+                <button onclick="completeChallenge('Plant a Tree')">Complete Challenge</button>
+            </div>
+            <div class="challenge">
+                <h3>Clean a Park</h3>
+                <button onclick="completeChallenge('Clean a Park')">Complete Challenge</button>
+            </div>
+            <div class="challenge">
+                <h3>Recycle 5 Items</h3>
+                <button onclick="completeChallenge('Recycle 5 Items')">Complete Challenge</button>
+            </div>
+        </section>
+        <section id="badges">
+            <h2>Badges</h2>
+            <div id="badge-list"></div>
+        </section>
+        <section id="photo-upload" style="display: none;">
+            <h2>Upload a Photo</h2>
+            <input type="file" id="photo" accept="image/*">
+            <button onclick="submitPhoto()">Submit Photo</button>
+        </section>
+    </main>
+
+    <!-- Modal for congratulation -->
+    <div id="congratulations-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Congrats! You just helped the planet!! Here's a badge!</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
